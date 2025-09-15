@@ -10,11 +10,11 @@ model = AutoModelForSequenceClassification.from_pretrained(cfg["model_name"], nu
 dataset = load_and_preprocess(cfg["model_name"])
 
 def compute_metrics(pred):
-    labels = pred.label_ids
+    label = pred.label_ids
     preds = np.argmax(pred.predictions, axis=1)
     return {
-        "accuracy": accuracy_score(labels, preds),
-        "f1": f1_score(labels, preds, average="weighted")
+        "accuracy": accuracy_score(label, preds),
+        "f1": f1_score(label, preds, average="weighted")
     }
 
 training_args = TrainingArguments(
