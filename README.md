@@ -1,7 +1,7 @@
 # 🧠 FineTune-LLM-Text Classifier
 
 A clean and modular pipeline to fine-tune **pretrained Large Language Models (LLMs)** for **text classification** tasks.  
-This repo uses the **AG News** dataset and **DistilBERT** for demonstration.
+This repo uses the AG News dataset and **DistilBERT** for demonstration.
 
 ---
 
